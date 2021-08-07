@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landio - Sass Landing Page </title>
+        <!--====== Bootstrap ======-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--====== Font Awesome ======-->
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+        <!--====== Flaticon ======-->
+        <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+        <!--====== Animate CSS ======-->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+        <!--====== Slick Slider ======-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!--====== Nice Select  ======-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--====== Default css ======-->
+        <link rel="stylesheet" href="assets/css/default.css">
+        <!--====== Main Stylesheet ======-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--====== Responsive Stylesheet ======-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Place favicon in the root directory -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body>
+        <!--======= Start Preloader =======-->
+        <div class="preloader">
+            <img class="preloader-image" width="60" src="assets/img/preloader-logo.png" alt="preloader"/>
+        </div> <!-- /.preloader -->
+        <!--======= End Preloader =======-->
+        <!--====== Start Search From ======-->
+        <div class="modal fade" id="search-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="form_group">
+                            <input type="text" class="form_control" placeholder="Search here...">
+                            <button class="search_btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div> <!-- /.modal-content -->
+            </div> <!-- /.modal-dialog -->
+        </div><!-- /#search-modal -->
+        <!--====== End Search From ======-->
+        <!--====== Start Header Area ======-->
+        <header class="header-area header-v1">
+            <div class="header-navigation">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Brand Logo and Language Selection Dropdown -->
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-8">
+                            <div class="site-branding-and-language-selection">
+                                <div class="brand-logo">
+                                    <a href="index.html">
+                                        <img src="assets/img/logo-royal-blue.png" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="language-selection">
+                                    <select class="nice-select" name="language">
+                                        <option value="en">English</option>
+                                        <option value="bn">Bangla</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Desktop and Mobile Menu -->
+                        <div class="col-xl-6 col-lg-3 col-md-1 col-2 text-center">
+                            <div class="primary-menu">
+                                <div class="nav-menu">
+                                    <!-- Navbar Close Icon -->
+                                    <div class="navbar-close">
+                                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                    </div>
+                                    <nav class="main-menu">
+                                        <ul>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="index.html" class="nav-link active">Demos</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="index.html" class="nav-link active">Homepage Sass</a></li>
+                                                    <li><a href="index-2.html">Homepage SEO</a></li>
+                                                    <li><a href="index-3.html">Homepage App</a></li>
+                                                    <li><a href="index-4.html">Homepage Chatbot</a></li>
+                                                    <li><a href="index-5.html">Homepage Consultant</a></li>
+                                                    <li><a href="index-6.html">Homepage Fintech</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="services.html" class="nav-link">Services</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="services.html">Our Services</a></li>
+                                                    <li><a href="service-details.html">Service Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="#" class="nav-link">Pages</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="team.html">Our Team</a></li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="blog-standard.html" class="nav-link">Blog</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog-standard.html">Blog Standard</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html" class="nav-link">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Menu Right -->
+                        <div class="col-xl-3 col-lg-5 col-md-6 col-2">
+                            <div class="header-right">
+                                <ul>
+                                    <li><a href="#" data-toggle="modal" data-target="#search-modal" class="search-btn"><i class="fas fa-search"></i></a></li>
+                                    <li class="get-started-wrapper">
+                                        <a href="services.html" class="filled-btn">
+                                            Get Started <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="menu-toggle">
+                                            <div class="menu-overlay"></div>
+                                            <!-- Navbar Toggler -->
+                                            <div class="nav-toggle">
+                                                <div class="navbar-toggler float-end">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.header-navigation -->
+        </header> <!-- /.header-area -->
+        <!--====== End Header Area ======-->
+        <!--====== Start Hero Area ======-->
+        <section class="hero-area hero-v1" style="background-image: url(assets/img/hero/app-overview-main-bg.png);">
+            <div class="container">
+                <div class="hero-internal">
+                    <div class="section-particle-effect d-none d-md-block">
+                        <img class="particle-1 animate-zoom-fade" src="assets/img/particle/particle-1.png" alt="particle One">
+                        <img class="particle-2 animate-float-bob-y" src="assets/img/particle/particle-2.png" alt="particle Two">
+                        <img class="particle-3 animate-zoominout" src="assets/img/particle/particle-3.png" alt="particle Three">
+                        <img class="particle-4 animate-zoominout" src="assets/img/particle/particle-4.png" alt="particle Four">
+                        <img class="particle-5 animate-zoominout" src="assets/img/particle/particle-5.png" alt="particle Five">
+                        <img class="particle-6 animate-zoom-fade" src="assets/img/particle/particle-6.png" alt="particle Six">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-11">
+                            <div class="hero-content">
+                                <div class="section-title">
+                                    <div class="section-heading-tag wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1500ms">
+                                        <span class="single-heading-tag">Save 25%</span>
+                                        <span class="single-heading-tag bordered-tag">Faster solutions</span>
+                                    </div>
+                                    <h1 class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1500ms">Build your <span>saas</span> landing pages with us</h1>
+                                    <div class="section-button-wrapper justify-content-center section-dual-button wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1500ms">
+                                        <a href="services.html" class="filled-btn">
+                                            Saas Solutions <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a href="about.html" class="filled-btn btn-bordered">
+                                            Learn More <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> <!-- /.hero-content -->
+                        </div> <!-- /.col-lg-10 -->
+                    </div> <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="app-dashboard-preview animate-float-bob-y">
+                                <img src="assets/img/app/app-dashboard.jpg" alt="app dashboard overview">
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.section-internal -->
+            </div> <!-- /.container-->
+        </section> <!-- /.hero-area -->
+        <!--====== End Hero Area ======-->
+        <!--====== Start App Feature Area ======-->
+        <section class="app-feature pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="app-feature-content">
+                            <div class="section-title">
+                                <div class="section-heading-tag">
+                                    <span class="single-heading-tag">Core features</span>
+                                </div>
+                                <h2>How can we help your problems</h2>
+                                <div class="section-title-description">
+                                    <p>Sed perspicias unde omnis iste natus error voluptatem accusantium dolorem laudanme totam rem aperiam eaque quae.</p>
+                                </div>
+                                <div class="section-button-wrapper">
+                                    <a href="about.html" class="filled-btn">
+                                        Learn More <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="app-features-list">
+                            <div class="single-service-box active wow fadeInDown" data-wow-delay="100ms" data-wow-duration="2500ms">
+                                <div class="service-thumbnail">
+                                    <img src="assets/img/services/app-feature-1.png" alt="app feature One">
+                                </div>
+                                <div class="service-box-content">
+                                    <h5 class="service-box-title">Faster and trusted grow solutions</h5>
+                                    <div class="service-box-btn">
+                                        <a href="about.html"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-service-box wow fadeInDown" data-wow-delay="200ms" data-wow-duration="2500ms">
+                                <div class="service-thumbnail">
+                                    <img src="assets/img/services/app-feature-2.png" alt="app feature Two">
+                                </div>
+                                <div class="service-box-content">
+                                    <h5 class="service-box-title">Strategy buildup for web software</h5>
+                                    <div class="service-box-btn">
+                                        <a href="about.html"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section> <!-- /.app-feature -->
+        <!--====== End App Feature Area ======-->
+        <!--====== Start Data Analysis Area ======-->
+        <section class="data-analysis-feature-area pb-130">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="data-analysis-preview-wrapper">
+                            <img class="data-analysis-preview data-analysis-preview-1 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms" src="assets/img/app/manage-data-1.jpg" alt="data analysis One">
+                            <img class="data-analysis-preview data-analysis-preview-2 animate-float-bob-x wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" src="assets/img/app/manage-data-2.jpg" alt="data analysis Two">
+                            <img class="data-analysis-preview data-analysis-preview-3 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms" src="assets/img/app/manage-data-3.jpg" alt="data analysis Three">
+                            <img class="data-analysis-preview data-analysis-preview-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms" src="assets/img/app/manage-data-4.jpg" alt="data analysis Four">
+                            <img class="data-analysis-preview data-analysis-preview-5 animate-float-bob-y" src="assets/img/app/manage-data-5.jpg" alt="data analysis Five">
+                            <img class="data-analysis-preview data-analysis-preview-6 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms" src="assets/img/app/manage-data-6.jpg" alt="data analysis Six">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="data-analysis-content">
+                            <div class="section-title">
+                                <div class="section-heading-tag">
+                                    <span class="single-heading-tag">Data Analysis</span>
+                                </div>
+                                <h2>Manage your data analysis easily</h2>
+                                <div class="section-title-description">
+                                    <p>Quis autem vel eum iure reprehenderit quin voluptate velit esse quam molesti consequatur velillum qui dolorem eum fugiate</p>
+                                </div>
+                            </div>
+                            <div class="section-list-style">
+                                <ul>
+                                    <li>Unlimited Design Possibility</li>
+                                    <li>Beautiful Mobile Apps</li>
+                                    <li>Easy Project Management</li>
+                                </ul>
+                            </div>
+                            <div class="section-button-wrapper mt-35">
+                                <a href="about.html" class="filled-btn btn-bordered bg-royal-blue">
+                                    Learn More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section> <!-- /.data-analysis-feature-area -->
+        <!--====== End Data Analysis Area ======-->
+        <!--====== Start Our Services Area ======-->
+        <section class="our-services bg-dark-black pt-129 pb-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="section-title section-title-white text-center mb-65">
+                            <div class="section-heading-tag">
+                                <span class="single-heading-tag bg-royal-blue">What We Do</span>
+                            </div>
+                            <h2>We offer smart saas solutions <br class="d-none d-md-block"> for better business</h2>
+                        </div>
+                    </div> 
+                </div>
+                <div class="our-services-content-wrapper">
+                    <div class="row">
+                        <!-- Single Feature Box -->
+                        <div class="col-md-6">
+                            <div class="single-feature-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="feature-box-icon">
+                                    <img src="assets/img/feature/service-icon-1.png" alt="service icon one">
+                                </div>
+                                <div class="feature-box-content">
+                                    <h4>Easy editable</h4>
+                                    <p>Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate</p>
+                                </div>
+                            </div> 
+                        </div> 
+                        <!-- Single Feature Box -->
+                        <div class="col-md-6">
+                            <div class="single-feature-box wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                <div class="feature-box-icon">
+                                    <img src="assets/img/feature/service-icon-2.png" alt="service icon one">
+                                </div>
+                                <div class="feature-box-content">
+                                    <h4>Fully responsive</h4>
+                                    <p>Again is there anyone who loves pursues or desires to obtain pain of itself because it is pain but because occasionally</p>
+                                </div>
+                            </div> 
+                        </div> 
+                        <!-- Single Feature Box -->
+                        <div class="col-md-6">
+                            <div class="single-feature-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                <div class="feature-box-icon">
+                                    <img src="assets/img/feature/service-icon-3.png" alt="service icon one">
+                                </div>
+                                <div class="feature-box-content">
+                                    <h4>Server solutions</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam rem aperiam</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- Single Feature Box -->
+                        <div class="col-md-6">
+                            <div class="single-feature-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="feature-box-icon">
+                                    <img src="assets/img/feature/service-icon-4.png" alt="service icon one">
+                                </div>
+                                <div class="feature-box-content">
+                                    <h4>Creative design</h4>
+                                    <p>Quis autem veleum iure reprehende quin voluptate velit esse quam molesti conseqtur velillum dolorem eum fugiate</p>
+                                </div>
+                            </div> 
+                        </div> 
+                        <!-- Single Feature Box -->
+                        <div class="col-md-6">
+                            <div class="single-feature-box wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <div class="feature-box-icon">
+                                    <img src="assets/img/feature/service-icon-5.png" alt="service icon one">
+                                </div>
+                                <div class="feature-box-content">
+                                    <h4>Well documentation</h4>
+                                    <p>But I must explain to you how mistaken idea of denouncing pleasure and praisinge pain was born and complete</p>
+                                </div>
+                            </div> 
+                        </div> 
+                        <!-- Single Feature Box -->
+                        <div class="col-md-6">
+                            <div class="single-feature-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                                <div class="feature-box-icon">
+                                    <img src="assets/img/feature/service-icon-6.png" alt="service icon one">
+                                </div>
+                                <div class="feature-box-content">
+                                    <h4>Quick linkup</h4>
+                                    <p>On the other hand we denounce with righteous indignation and dislike men who are so beguiled</p>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div> <!-- /.row -->
+                </div> <!-- /.our-services-content-wrapper -->
+            </div> <!-- /.container -->
+        </section> <!-- /.our-services -->
+        <!--====== End Our Services Area ======-->
+        <!--====== Start App Statistic Area ======-->
+        <section class="app-statistic-area pt-130 pb-130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="core-statistic-content content-right-spacer">
+                            <div class="section-title">
+                                <div class="section-heading-tag">
+                                    <span class="single-heading-tag">Core Statices</span>
+                                </div>
+                                <h2>Get instant growth result for saas</h2>
+                                <div class="section-title-description">
+                                    <p>Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque udantium, totam rem aperiam eaque</p>
+                                </div>
+                            </div>
+                            <div class="simple-icon-box-wrapper mt-40 mb-40">
+                                <div class="simple-single-icon-box simple-single-icon-box-v2">
+                                    <i class="fal fa-users"></i>
+                                    <h4>Build for Real <br class="d-none d-md-block"> Saas Users</h4>
+                                </div>
+                                <div class="simple-single-icon-box simple-single-icon-box-v2">
+                                    <i class="fal fa-tools"></i>
+                                    <h4>Process Setup <br class="d-none d-md-block"> Easily</h4>
+                                </div>
+                            </div>
+                            <div class="section-button-wrapper mt-30">
+                                <a href="about.html" class="filled-btn">
+                                    Learn More<i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-7">
+                        <div class="statistic-preveiw-thumbnail">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="statistic-thumbnail statistic-thumbnail-1 animate-float-bob-y wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms" src="assets/img/app/core-statistic-1.png" alt="statistic preview one">
+                                    <img class="statistic-thumbnail statistic-thumbnail-3 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" src="assets/img/app/core-statistic-3.png" alt="statistic preview three">
+                                </div>
+                                <div class="col-6">
+                                    <img class="statistic-thumbnail statistic-thumbnail-2 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms" src="assets/img/app/core-statistic-2.png" alt="statistic preview two">
+                                    <img class="statistic-thumbnail statistic-thumbnail-4 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms" src="assets/img/app/core-statistic-4.png" alt="statistic preview four">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section> <!-- /.app-statistic-area -->
+        <!--====== End App Statistic Area ======-->
+        <!--====== Start Testimonial Area ======-->
+        <section class="testimonial-area pt-130 pb-120">
+            <div class="container">
+                <div class="section-title text-center mb-55">
+                    <div class="section-heading-tag">
+                        <span class="single-heading-tag">Our Testimonials</span>
+                    </div>
+                    <h2>What our clients say <br class="d-none d-md-block"> about solutions</h2>
+                </div>
+                <div class="testimonial-slider" id="testimonial-slider-v1">
+                    <div class="single-testimonial">
+                        <div class="quote-thumbnail">
+                            <i class="flaticon-right-quote"></i>
+                        </div>
+                        <p>Sed ut perspicia unde omnis natus error sit volupt accusantium doloremque laudantium totam rem aperiam eaque quae</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonial/testimonial-author-1.png" alt="testimonial author">
+                            <h6>Michael W. Kirwan <span>CEO & Founder</span></h6>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="quote-thumbnail">
+                            <i class="flaticon-right-quote"></i>
+                        </div>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae conse quatur vellum rem</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonial/testimonial-author-2.png" alt="testimonial author">
+                            <h6>Ricky L. Simpson <span>Web Designer</span></h6>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="quote-thumbnail">
+                            <i class="flaticon-right-quote"></i>
+                        </div>
+                        <p>On the other hand denounce with righteous indignation dislike men who are so beguiled and demoralized by charms</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonial/testimonial-author-3.png" alt="testimonial author">
+                            <h6>Harold S. Richardson <span>Saas Developer</span></h6>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="quote-thumbnail">
+                            <i class="flaticon-right-quote"></i>
+                        </div>
+                        <p>On the other hand denounce with righteous indignation dislike men who are so beguiled and demoralized by charms</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonial/testimonial-author-1.png" alt="testimonial author">
+                            <h6>Harold S. Richardson <span>Saas Developer</span></h6>
+                        </div>
+                    </div> 
+                </div> <!-- /.testimonial-slider -->
+            </div> <!-- /.container -->
+        </section> <!-- /.testimonial-area -->
+        <!--====== End Testimonial Area ======-->
+        <!--====== Start Counter Up Area ======-->
+        <section class="counter-up-area bg-royal-blue pt-128 pb-43">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="counter-up-thumbnails content-right-spacer wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <img class="counterup-main-thumbnail-top animate-float-bob-x" src="assets/img/app/count-down-main-thumbnail-top.png" alt="countdown thumbnails top">
+                            <img class="counterup-main-thumbnail" src="assets/img/app/count-down-main-thumbnail.png" alt="countdown thumbnails main">
+                            <img class="counterup-main-thumbnail-bottom animate-float-bob-y" src="assets/img/app/count-down-main-thumbnail-bottom.png" alt="countdown thumbnails bottom">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="counterup-wrapper">
+                            <div class="row">
+                                <!-- Single Counter Up -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-counter-up wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                        <div class="counterup-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="counterup-info">
+                                            <h2>
+                                                <span class="counter">96327</span>
+                                                <span class="sign">+</span>
+                                            </h2>
+                                            <p>Daily Active Users</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!-- Single Counter Up -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-counter-up wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                        <div class="counterup-icon">
+                                            <i class="fas fa-file-alt"></i>
+                                        </div>
+                                        <div class="counterup-info">
+                                            <h2>
+                                                <span class="counter">78630</span>
+                                                <span class="sign">+</span>
+                                            </h2>
+                                            <p>Project Complate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Counter Up -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-counter-up wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                        <div class="counterup-icon">
+                                            <i class="fas fa-cloud-download-alt"></i>
+                                        </div>
+                                        <div class="counterup-info">
+                                            <h2>
+                                                <span class="counter">56326</span>
+                                                <span class="sign">+</span>
+                                            </h2>
+                                            <p>Download Software</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Counter Up -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single-counter-up wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                        <div class="counterup-icon">
+                                            <i class="fas fa-gem"></i>
+                                        </div>
+                                        <div class="counterup-info">
+                                            <h2>
+                                                <span class="counter">63020</span>
+                                                <span class="sign">+</span>
+                                            </h2>
+                                            <p>5 Star Rating Reviews</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div> <!-- /.row -->
+                        </div> <!-- /.counterup-wrapper -->
+                    </div> <!-- /.col-md-7 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container-->
+        </section> <!-- /.counter-up-area -->
+        <!--====== End Counter Up Area ======-->
+        <!--====== Start Call to Action Area ======-->
+        <section class="cta-area">
+            <div class="container">
+                <div class="cta-content-internal">
+                    <div class="cta-section-particle d-none d-lg-block">
+                        <img class="cta-particle-left" src="assets/img/cta/cta-left-particle-1.png" alt="cta particle 1">
+                        <img class="cta-particle-right" src="assets/img/cta/cta-right-particle-1.png" alt="cta particle 2">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="cta-content">
+                                <div class="section-title text-center">
+                                    <div class="section-heading-tag wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1500ms">
+                                        <span class="single-heading-tag">Download Apps</span>
+                                    </div>
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1500ms">Get our apps very easily, we’re <br class="d-none d-md-block"> available on store</h2>
+                                    <div class="section-button-wrapper section-dual-button justify-content-center text-center wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1500ms">
+                                        <a href="service-details.html" class="filled-btn">
+                                            Apple Store <i class="fab fa-apple"></i>
+                                        </a>
+                                        <a href="service-details.html" class="filled-btn bg-blue-chalk">
+                                            Google Play <i class="fab fa-google-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.cta-content-internal -->
+            </div> <!-- /.container -->
+        </section>  <!-- /.cta-area -->
+        <!--====== End Call to Action Area ======-->
+        <!--====== Start Footer Area ======-->
+        <footer class="footer-area footer-area-v1" style="background-image: url(assets/img/footer-bg.png);">
+            <div class="container">
+                <div class="footer-area-internal">
+                    <div class="row">
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="single-footer-widget footer-text-widget">
+                                <img src="assets/img/logo-royal-blue.png" alt="footer logo">
+                                <p>Sed ut perspiciatis undmnis iste natus error sit voluptatem accusantium dolore udantiuy totam rem aperiam.</p>
+                                <a class="footer-contact-link" href="tel:+01234567899"><i class="fas fa-phone"></i> +012 (345) 678 99</a>
+                            </div> 
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="single-footer-widget">
+                                <h5 class="widget-title">Resources</h5>
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                        <li><a href="about.html">Saas Development</a></li>
+                                        <li><a href="about.html">Our Products</a></li>
+                                        <li><a href="about.html">User Strategy</a></li>
+                                        <li><a href="about.html">Blogs & Guides</a></li>
+                                        <li><a href="about.html">Premium Support</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="single-footer-widget">
+                                <h5 class="widget-title">Company</h5>
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                        <li><a href="about.html">About Landio</a></li>
+                                        <li><a href="about.html">Contact & Support</a></li>
+                                        <li><a href="services.html">Success History</a></li>
+                                        <li><a href="services.html">Setting & Privacy</a></li>
+                                        <li><a href="services.html">Company History</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="single-footer-widget">
+                                <h5 class="widget-title">Follow On</h5>
+                                <div class="footer-social-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-copyright">
+                                    <p>&copy; 2021 <a href="#">Landio.</a> All Rights Reserved</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.footer-area-internal -->
+            </div> <!-- /.container -->
+        </footer> <!-- /.footer-area -->
+        <!--====== End Footer Area ======-->
+        <!--======= Scroll To Top =======-->
+        <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+        <!--====== Optional Javascript ======-->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <!--====== Popper JS ======-->
+        <script src="assets/js/popper.min.js"></script>
+        <!--====== Bootstrap JS ======-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!--====== Slick Slider JS ======-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--====== Wow JS ======-->
+        <script src="assets/js/wow.js"></script>
+        <!--====== Nice Select ======-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--====== Counter Up JS ======-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!--====== Magnific Popup JS ======-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--====== Waypoint JS ======-->
+        <script src="assets/js/jquery.waypoints.js"></script>
+        <!--====== Main Script ======-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

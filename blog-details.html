@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landio - Blog Details </title>
+        <!--====== Bootstrap ======-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--====== Font Awesome ======-->
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+        <!--====== Flaticon ======-->
+        <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+        <!--====== Animate CSS ======-->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+        <!--====== Slick Slider ======-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!--====== Nice Select  ======-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--====== Default css ======-->
+        <link rel="stylesheet" href="assets/css/default.css">
+        <!--====== Main Stylesheet ======-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--====== Responsive Stylesheet ======-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Place favicon in the root directory -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body>
+        <!--======= Start Preloader =======-->
+        <div class="preloader">
+            <img class="preloader-image" width="60" src="assets/img/preloader-logo.png" alt="preloader"/>
+        </div> <!-- /.preloader -->
+        <!--======= End Preloader =======-->
+        <!--====== Start Search From ======-->
+        <div class="modal fade" id="search-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="form_group">
+                            <input type="text" class="form_control" placeholder="Search here...">
+                            <button class="search_btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div> <!-- /.modal-content -->
+            </div> <!-- /.modal-dialog -->
+        </div><!-- /#search-modal -->
+        <!--====== End Search From ======-->
+        <!--====== Start Header Area ======-->
+        <header class="header-area header-v1">
+            <div class="header-navigation">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Brand Logo and Language Selection Dropdown -->
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-8">
+                            <div class="site-branding-and-language-selection">
+                                <div class="brand-logo">
+                                    <a href="index.html">
+                                        <img src="assets/img/logo-royal-blue.png" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="language-selection">
+                                    <select class="nice-select" name="language">
+                                        <option value="en">English</option>
+                                        <option value="bn">Bangla</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Desktop and Mobile Menu -->
+                        <div class="col-xl-6 col-lg-3 col-md-1 col-2 text-center">
+                            <div class="primary-menu">
+                                <div class="nav-menu">
+                                    <!-- Navbar Close Icon -->
+                                    <div class="navbar-close">
+                                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                    </div>
+                                    <nav class="main-menu">
+                                        <ul>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="index.html" class="nav-link">Demos</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="index.html">Homepage Sass</a></li>
+                                                    <li><a href="index-2.html">Homepage SEO</a></li>
+                                                    <li><a href="index-3.html">Homepage App</a></li>
+                                                    <li><a href="index-4.html">Homepage Chatbot</a></li>
+                                                    <li><a href="index-5.html">Homepage Consultant</a></li>
+                                                    <li><a href="index-6.html">Homepage Fintech</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="services.html" class="nav-link">Services</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="services.html">Our Services</a></li>
+                                                    <li><a href="service-details.html">Service Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="#" class="nav-link">Pages</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="team.html">Our Team</a></li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="blog-standard.html" class="nav-link active">Blog</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog-standard.html">Blog Standard</a></li>
+                                                    <li><a href="blog-details.html" class="nav-link active">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html" class="nav-link">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Menu Right -->
+                        <div class="col-xl-3 col-lg-5 col-md-6 col-2">
+                            <div class="header-right">
+                                <ul>
+                                    <li><a href="#" data-toggle="modal" data-target="#search-modal" class="search-btn"><i class="fas fa-search"></i></a></li>
+                                    <li class="get-started-wrapper">
+                                        <a href="services.html" class="filled-btn">
+                                            Get Started <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="menu-toggle">
+                                            <div class="menu-overlay"></div>
+                                            <!-- Navbar Toggler -->
+                                            <div class="nav-toggle">
+                                                <div class="navbar-toggler float-end">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.header-navigation -->
+        </header> <!-- /.header-area -->
+        <!--====== End Header Area ======-->
+        <!--====== Start Breadcrumb Area ======-->
+        <section class="breadcrumb-area">
+            <div class="container">
+                <div class="section-internal">
+                    <div class="section-particle-effect d-none d-md-block section-particle-effect-v3">
+                        <img class="particle-1 animate-zoom-fade" src="assets/img/particle/particle-1.png" alt="particle One">
+                        <img class="particle-2 animate-rotate-me" src="assets/img/particle/particle-2.png" alt="particle Two">
+                        <img class="particle-3 animate-float-bob-x" src="assets/img/particle/particle-3.png" alt="particle Three">
+                        <img class="particle-4 animate-float-bob-y" src="assets/img/particle/particle-4.png" alt="particle Four">
+                        <img class="particle-5 animate-float-bob-y" src="assets/img/particle/particle-5.png" alt="particle Five">
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="breadcrumb-content text-center">
+                                <div class="page-title wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1500ms">
+                                    <h1>Blog Details</h1>
+                                </div>
+                                <div class="page-breadcrumb wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1500ms">
+                                    <ul class="breadcrumb">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li class="active">Blog Details</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.section-internal -->
+            </div> <!-- /.container -->
+        </section> <!-- /.breadcrumb-area -->
+        <!--====== End Breadcrumb Area ======-->
+        <!--====== Start Blog Details Area ======-->
+        <section class="blog-details-wrapper pt-130 pb-130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="blog-details-content">
+                            <div class="blog-post-item">
+                                <div class="post-thumbnail">
+                                    <img src="assets/img/blog/blog-list-featured-thumbnail-1.jpg" alt="blog thumbnail">
+                                </div>
+                                <div class="entry-content">
+                                    <div class="post-meta-wrapper">
+                                        <ul>
+                                            <li><a href="#" class="post-meta"><i class="far fa-user"></i>Nichel Jhon</a></li>
+                                            <li><a href="#" class="post-meta"><i class="far fa-calendar-alt"></i>25 May 2021</a></li>
+                                            <li><a href="#" class="post-meta"><i class="far fa-comment-dots"></i>Comments (05)</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4>Multiplayer Text Adventure Engine In Node Game Engine Server Design Optimizing</h4>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quoe</p>
+                                    <blockquote class="blockquote">
+                                        <h4>Combinin Graphica And Voice Interfaces For Better User Experience Deceive Avoiding Bias</h4>
+                                        <h5>Bailey Dobson</h5>
+                                    </blockquote>
+                                    <h4>Ensure Your Design System Achieve</h4>
+                                    <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                                    <div class="post-share">
+                                        <div class="post-tag-cloud">
+                                            <ul>
+                                                <li class="item-heading">Poplular Tags </li>
+                                                <li><a href="#">Landing</a></li>
+                                                <li><a href="#">UI Design</a></li>
+                                                <li><a href="#">Development</a></li>
+                                                <li><a href="#">Mobile Apps</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="social-links">
+                                            <ul>
+                                                <li class="item-heading">Share :</li>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Post Author -->
+                            <div class="post-author-box">
+                                <div class="post-author-thumbnail">
+                                    <img src="assets/img/blog/post-author-thumbnail.jpg" alt="post author">
+                                </div>
+                                <div class="author-box-content">
+                                    <h4>Nathan George</h4>
+                                    <p>Quis autem veleum iure reprehenderit quinea voluptate esse quam molestiae consequatu velillum dolorem fugiat quo voluptas nulla pariano one rejects dislikes</p>
+                                    <div class="social-links">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Comment Area -->
+                            <div class="comments-area">
+                                <h4 class="comments-title">People Comments</h4>
+                                <ul class="comments-list">
+                                    <li class="comment">
+                                        <div class="comment-avatar">
+                                            <img src="assets/img/blog/comment-avatar-1.jpg" alt="comment author one">
+                                        </div>
+                                        <div class="comment-wrap">
+                                            <div class="comment-author-content">
+                                                <span class="author-name">John F. Medina <span class="date">25 May, 2021</span></span>
+                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae</p>
+                                                <a href="#comment-respond" class="reply">Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="comment">
+                                        <div class="comment-avatar">
+                                            <img src="assets/img/blog/comment-avatar-2.jpg" alt="comment author two">
+                                        </div>
+                                        <div class="comment-wrap">
+                                            <div class="comment-author-content">
+                                                <span class="author-name">Jeffrey T. Kelly<span class="date">25 May, 2021</span></span>
+                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium doloremque laudantium, totam rem aperiam</p>
+                                                <a href="#comment-respond" class="reply">Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="comment">
+                                        <div class="comment-avatar">
+                                            <img src="assets/img/blog/comment-avatar-3.jpg" alt="comment author three">
+                                        </div>
+                                        <div class="comment-wrap">
+                                            <div class="comment-author-content">
+                                                <span class="author-name">Richard B. Zellmer<span class="date">25 May, 2021</span></span>
+                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaquequasi</p>
+                                                <a href="#comment-respond" class="reply">Reply</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Comment Form -->
+                            <div class="comments-respond" id="comment-respond">
+                                <h4 class="comments-heading">Leave A Reply</h4>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Your Full Name" name="name" required="">
+                                                <i class="far fa-user-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Your Email " name="email" required="">
+                                                <i class="far fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" placeholder="Write Message" name="message"></textarea>
+                                                <i class="far fa-pencil-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button class="filled-btn">Send Comments <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- /.blog-details-content -->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="posts-sidebar">
+                            <div class="widget search-widget wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1200ms">
+                                <h4>Search Here</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="search" class="form-control" placeholder="Search" name="search">
+                                        <button class="search-btn"><i class="far fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="widget category-widget wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1200ms">
+                                <h4 class="sidebar-widget-title">Category</h4>
+                                <ul class="category-link">
+                                    <li><a href="course-details.html">Web Development</a></li>
+                                    <li><a href="course-details.html">Email Marketing</a></li>
+                                    <li><a href="course-details.html">IT Consultancy</a></li>
+                                    <li><a href="course-details.html">Business Consulting</a></li>
+                                    <li><a href="course-details.html">Apps Development</a></li>
+                                    <li><a href="course-details.html">Media Marketing</a></li>
+                                    <li><a href="course-details.html">SEO Optimizations</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget latest-post-widget wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1200ms">
+                                <h4 class="sidebar-widget-title">Latest News</h4>
+                                <div class="popular-posts-wrapper">
+                                    <div class="popular-posts-item">
+                                        <div class="popular-posts-thumbnail">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/latest-post-thumbnail-1.jpg" alt="latest post one">
+                                            </a>
+                                        </div>
+                                        <div class="popular-posts-item-content">
+                                            <h5 class="popular-posts-title"><a href="blog-details.html">Build Seamless Spreadshet Import Experience</a></h5>
+                                            <a href="#" class="posts-date"><i class="far fa-calendar-alt"></i> 25 May 2021</a>
+                                        </div>
+                                    </div> <!-- /.popular-posts-item -->
+                                    <div class="popular-posts-item">
+                                        <div class="popular-posts-thumbnail">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/latest-post-thumbnail-2.jpg" alt="latest post two">
+                                            </a>
+                                        </div>
+                                        <div class="popular-posts-item-content">
+                                            <h5 class="popular-posts-title"><a href="blog-details.html">Creating Online Environment Work Well Older</a></h5>
+                                            <a href="#" class="posts-date"><i class="far fa-calendar-alt"></i> 25 May 2021</a>
+                                        </div>
+                                    </div> <!-- /.popular-posts-item -->
+                                    <div class="popular-posts-item">
+                                        <div class="popular-posts-thumbnail">
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/latest-post-thumbnail-3.jpg" alt="latest post three">
+                                            </a>
+                                        </div>
+                                        <div class="popular-posts-item-content">
+                                            <h5 class="popular-posts-title"><a href="blog-details.html">Signs Website Feels More Haunted House</a></h5>
+                                            <a href="#" class="posts-date"><i class="far fa-calendar-alt"></i> 25 May 2021</a>
+                                        </div>
+                                    </div> <!-- /.popular-posts-item -->
+                                </div>
+                            </div>
+                            <div class="widget widget-testimonial wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1200ms">
+                                <div class="testimonial-slider testimonial-slider-v4" id="testimonial-slider-v3">
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial single-testimonial-v4">
+                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae conse quatur vellum rem</p>
+                                        <div class="testimonial-author">
+                                            <img src="assets/img/testimonial/testimonial-author-1.png" alt="testimonial author">
+                                            <h6>Michael W. Kirwan <span>CEO & founder</span></h6>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial single-testimonial-v4">
+                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae conse quatur vellum rem</p>
+                                        <div class="testimonial-author">
+                                            <img src="assets/img/testimonial/testimonial-author-2.png" alt="testimonial author">
+                                            <h6>Ricky L. Simpson <span>Web designer</span></h6>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial single-testimonial-v4">
+                                        <p>On the other hand denounce with righteous indignation dislike men who are so beguiled and demoralized by charms</p>
+                                        <div class="testimonial-author">
+                                            <img src="assets/img/testimonial/testimonial-author-3.png" alt="testimonial author">
+                                            <h6>Harold S. Richardson <span>Saas developer</span></h6>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial single-testimonial-v4">
+                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae conse quatur vellum rem</p>
+                                        <div class="testimonial-author">
+                                            <img src="assets/img/testimonial/testimonial-author-2.png" alt="testimonial author">
+                                            <h6>Ricky L. Simpson <span>Web designer</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget widget-tag-cloud wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1200ms">
+                                <h4 class="sidebar-widget-title">Popular Tags</h4>
+                                <a href="#">Landing</a>
+                                <a href="#">UI Design</a>
+                                <a href="#">Web</a>
+                                <a href="#">SEO</a>
+                                <a href="#">Development</a>
+                                <a href="#">UX/UI</a>
+                                <a href="#">Consulting</a>
+                                <a href="#">Mobile Apps</a>
+                            </div>
+                        </div> <!-- /.posts-sidebar -->
+                    </div>
+                </div> <!-- /row -->
+            </div> <!-- .container -->
+        </section> <!-- /.blog-details-wrapper -->
+        <!--====== End Blog Details Area ======-->
+        <!--====== Start Subscribe Newsletter Area ======-->
+        <section class="subscribe-newsletter-area bg-white-lilac pt-130 pb-123" style="background-image: url(assets/img/particle/newsletter-bg.png);">
+            <div class="container">
+                <div class="section-internal">
+                    <div class="section-particle-effect d-none d-md-block section-particle-effect-v4">
+                        <img class="particle-1 animate-rotate-me" src="assets/img/particle/particle-2.png" alt="particle One">
+                        <img class="particle-2 animate-rotate-me" src="assets/img/particle/gradient-curve-shape-2.png" alt="particle Two">
+                        <img class="particle-3 animate-zoominout" src="assets/img/particle/particle-4.png" alt="particle Three">
+                        <img class="particle-4 animate-float-bob-y" src="assets/img/particle/particle-5.png" alt="particle Five">
+                    </div>
+                    <div class="row text-center justify-content-center">
+                        <div class="col-xl-7 col-lg-10">
+                            <div class="subscribe-newsletter-content">
+                                <div class="section-title mb-35">
+                                    <div class="section-heading-tag wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1500ms">
+                                        <span class="single-heading-tag">Our Newsletter</span>
+                                    </div>
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1500ms">Subscribe Our Newsletter <br class="d-none d-md-block">To Get More Update</h2>
+                                </div>
+                                <div class="newsletter-form newsletter-form-v2 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1500ms">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="emailAddress" class="form-control" placeholder="Enter Your Email Address">
+                                            <button type="submit" name="submit" value="Go" class="filled-btn">Subscribe Now <i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </form>
+                                    <div class="newsletter-notice">
+                                        <p>On the other hand, we denounce with righteous</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.section-internal -->
+            </div> <!-- /.container -->
+        </section> <!-- /.subscribe-newsletter-area -->
+        <!--====== End Subscribe Newsletter Area ======-->
+        <!--====== Start Footer Area ======-->
+        <footer class="footer-area border-0">
+            <div class="container">
+                <div class="footer-area-internal border-bottom-purple">
+                    <div class="row">
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="single-footer-widget footer-text-widget">
+                                <h5 class="widget-title">About Landio</h5>
+                                <p>Sed ut perspiciatis undmnis iste natus error sit voluptatem accusantium dolore udantiuy totam rem aperiam.</p>
+                                <div class="footer-social-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="single-footer-widget">
+                                <h5 class="widget-title">Resources</h5>
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                        <li><a href="service.html">Saas Development</a></li>
+                                        <li><a href="about.html">Our Products</a></li>
+                                        <li><a href="about.html">User Strategy</a></li>
+                                        <li><a href="blog-standard.html">Blogs & Guides</a></li>
+                                        <li><a href="about.html">Premium Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="single-footer-widget">
+                                <h5 class="widget-title">Company</h5>
+                                <div class="footer-widget-menu">
+                                    <ul>
+                                        <li><a href="about.html">About Landio</a></li>
+                                        <li><a href="contact.html">Contact & Support</a></li>
+                                        <li><a href="about.html">Success History</a></li>
+                                        <li><a href="about.html">Setting & Privacy</a></li>
+                                        <li><a href="about.html">Company History</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="single-footer-widget follow-on-widget">
+                                <h5 class="widget-title">Download</h5>
+                                <div class="footer-app-download">
+                                    <a href="service-details.html" class="filled-btn">
+                                        Apple More <i class="fab fa-apple"></i>
+                                    </a>
+                                    <a href="service-details.html" class="filled-btn bg-blue-chalk">
+                                        Google Play <i class="fab fa-google-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div><!-- /.footer-area-internal -->
+            </div> <!-- /.container -->
+            <div class="footer-copyright-area border-0 wow fadeInDown" data-wow-delay="0.8s">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-sm-4">
+                            <div class="footer-logo">
+                                <img src="assets/img/logo-royal-blue.png" alt="footer logo">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-8">
+                            <div class="footer-copyright">
+                                <p>© 2021 <a href="#">Landio.</a> All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </div> <!-- /.footer-copyright-area -->
+        </footer> <!-- /.footer-area -->
+        <!--====== End Footer Area ======-->
+        <!--======= Scroll To Top =======-->
+        <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+        <!--====== Optional Javascript ======-->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <!--====== Popper JS ======-->
+        <script src="assets/js/popper.min.js"></script>
+        <!--====== Bootstrap JS ======-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!--====== Slick Slider JS ======-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--====== Wow JS ======-->
+        <script src="assets/js/wow.js"></script>
+        <!--====== Nice Select ======-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--====== Counter Up JS ======-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!--====== Magnific Popup JS ======-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--====== Waypoint JS ======-->
+        <script src="assets/js/jquery.waypoints.js"></script>
+        <!--====== Main Script ======-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
